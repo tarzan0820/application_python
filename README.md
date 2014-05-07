@@ -6,6 +6,7 @@ This cookbook is designed to be able to describe and deploy Python web applicati
 - Django
 - Green Unicorn
 - Celery
+- openerp
 
 Note that this cookbook provides the Python-specific bindings for the `application` cookbook; you will find general documentation in that cookbook.
 
