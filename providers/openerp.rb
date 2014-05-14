@@ -125,9 +125,8 @@ def created_configuration_file
     owner new_resource.owner
     group new_resource.group
     mode "644"
-    variables new_resource.settings.clone
-    variables.update pid_file => pidfile, addons_path => addons, :logfile => logfile, :admin_pass => new_resource.admin_pass, :sentry_dsn => new_resource.sentry_dsn, :debug => new_resource.debug, :database => {
-      :settings => new_resource.database,
+    variables pid_file => pidfile, addons_path => addons, :logfile => logfile, :admin_pass => new_resource.admin_pass, :sentry_dsn => new_resource.sentry_dsn, :debug => new_resource.debug, :database => {
+      :settings => new_resource.database
     }
   end
 end
